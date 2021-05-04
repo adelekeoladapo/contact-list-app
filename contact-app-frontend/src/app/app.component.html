@@ -31,6 +31,13 @@
                     <div class="name">{{ data.name }}</div>
                 </div>
             </li>
+            <li *ngIf="listResponse?.data.length == 0">
+              <div class="contact">
+                <div class="image"></div>
+                <div class="name">No records {{ (listRequest?.filter.length > 0) ? ' found for ' + listRequest?.filter : '' }}</div> <br /><br /><br />
+              </div>
+            </li>
+
         </ul>
     </div>
     <div class="pagination">

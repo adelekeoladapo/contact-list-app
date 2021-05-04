@@ -20,7 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="889666f7-f299-4ee7-8bb3-01aec6fa3248" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact-app-backend/src/main/resources/ebean.properties" beforeDir="false" afterPath="$PROJECT_DIR$/contact-app-backend/src/main/resources/ebean.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact-app-backend/target/classes/ebean.properties" beforeDir="false" afterPath="$PROJECT_DIR$/contact-app-backend/target/classes/ebean.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact-app-backend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/contact-app-backend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact-app-frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact-app-frontend/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +56,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -61,6 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1620130008228</updated>
       <workItem from="1620130009744" duration="2765000" />
+      <workItem from="1620141140942" duration="611000" />
     </task>
     <servers />
   </component>
@@ -77,5 +84,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

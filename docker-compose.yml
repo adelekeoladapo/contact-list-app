@@ -21,7 +21,7 @@ services:
       - "7000:7000"
     links:
       - postgres_db
-      
+
   contact-app-frontend:
     build: ./contact-app-frontend
     container_name: contact-app-frontend
