@@ -1,0 +1,47 @@
+<div class="app-container">
+    <div class="title">Simple Contact List</div>
+    <div class="controls">
+        <div class="control">
+            <label>No. of Items </label>
+            <select name="numberOfItems" id="numberOfItems" [(ngModel)]="listRequest.limit" (change)="initContactList(listRequest)">
+                <option>5</option>
+                <option>10</option>
+                <option>20</option>
+                <option>50</option>
+                <option>100</option>
+            </select>
+        </div>
+        <div class="control">
+            <label>Order </label>
+            <select name="sortOrder" id="sortOrder" [(ngModel)]="listRequest.sortOrder" (change)="initContactList(listRequest)">
+                <option value="ASC">Ascending</option>
+                <option value="DESC">Descending</option>
+            </select>
+        </div>
+        <div class="control">
+            <label>Search </label>
+            <input type="text" placeholder="eg Bill" [(ngModel)]="listRequest.filter" (input)="initContactList(listRequest)">
+        </div>
+    </div>
+    <div class="contact-list">
+        <ul>
+            <li *ngFor="let data of listResponse?.data">
+                <div class="contact">
+                    <div class="image"><img [src]="domainSanitizer.bypassSecurityTrustUrl(data.photoUrl)"></div>
+                    <div class="name">{{ data.name }}</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="pagination">
+        <div class="page-counter">
+          <span>Number of Items: {{ listResponse?.total }}</span>
+          <span>Page {{ listResponse?.page + ' of ' + getTotalNumberOfPages() }}</span>
+        </div>
+        <ul>
+          <li *ngIf="listResponse?.page > 1" (click)="goPrevious()"><< Previous</li>
+          <li *ngIf="listResponse?.page < getTotalNumberOfPages()" (click)="goNext()">Next >></li>
+        </ul>
+    </div>
+  <div class="footer"></div>
+</div>

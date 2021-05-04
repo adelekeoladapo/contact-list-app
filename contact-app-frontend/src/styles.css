@@ -1,0 +1,100 @@
+/* You can add global styles to this file, and also import other style files */
+.app-container {
+}
+
+.app-container .title {
+  border: solid 1px #12316E;
+  background-color: #12316E;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.app-container .controls {
+  border-bottom: solid 1px #ddd;
+  padding: 10px;
+}
+
+.app-container .controls .control {
+  display: inline-block;
+  width: 30%;
+}
+
+.app-container .controls .control label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.app-container .controls .control select, .app-container .controls .control input {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.contact-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list ul li {}
+
+.contact-list ul li .contact {
+  border-bottom: solid 1px #eee;
+  position: relative;
+}
+
+.contact-list ul li .contact .image {
+  display: inline-block;
+  object-fit: contain;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.contact-list ul li .contact .image img {
+  height: 50px;
+  width: 50px;
+  border: solid 1px #ddd;
+  border-radius: 100%;
+}
+
+.contact-list ul li .contact .name {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  top:18px;
+}
+
+
+.app-container .pagination {
+  padding-top: 10px;
+}
+
+.app-container .pagination .page-counter {
+  font-size: 18px;
+  float: left;
+}
+
+.app-container .pagination .page-counter span {
+  margin-right: 20px;
+}
+
+.app-container .pagination ul {
+  list-style: none;
+  padding: 0;
+  float: right;
+}
+
+.app-container .pagination ul li {
+  display: inline;
+  border: solid 1px #12316E;
+  font-size: 18px;
+  padding: 15px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.app-container .footer {
+  height: 100px;
+}
+

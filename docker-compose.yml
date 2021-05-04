@@ -1,0 +1,41 @@
+version: '3'
+services:
+  postgres_db:
+    image: postgres:9.6
+    container_name: postgres_db
+    volumes:
+      - contact-app-data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: dapo
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: contact_app_db
+
+  contact-app-backend:
+    build: ./contact-app-backend
+    container_name: contact-app-backend
+    environment:
+      - DB_SERVER=postgres_db
+    ports:
+      - "7000:7000"
+    links:
+      - postgres_db
+      
+  contact-app-frontend:
+    build: ./contact-app-frontend
+    container_name: contact-app-frontend
+    ports:
+      - 4200:80
+    links:
+      - contact-app-backend
+
+volumes:
+#  api:
+  contact-app-data:
+
+networks:
+  contact-app-network:
+    driver: bridge
+
+
